@@ -1,0 +1,19 @@
+# CodeIgniter 4
+.env
+/writable/cache/
+/writable/logs/
+/writable/session/
+/writable/uploads/
+/public/assets/
+/vendor/
+/tests/_output/
+
+# Composer
+composer.lock
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

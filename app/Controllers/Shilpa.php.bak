@@ -1,0 +1,72 @@
+<?php
+
+namespace App\Controllers;
+use App\Models\UserModel;
+use Illuminate\Http\Request;
+use Illuminate\Cookie\CookieJar;
+
+class Shilpa extends BaseController
+{
+	
+	sdf
+	public function __construct()
+	{
+	
+	}
+
+	public function index()
+	{   $db = \Config\Database::connect();
+		$sql1 ='select * from users';
+		$user = $db->query($sql1)->getResultArray(); 
+		// echo '<pre>'; print_r($user);die;
+		$data["user"]=$user;
+		return view('shilpa/view1', $data);
+	}
+	
+	public function view1()
+	{   $db = \Config\Database::connect();
+		$sql1 ='select * from users';
+		$user = $db->query($sql1)->getResultArray(); 
+		// echo '<pre>'; print_r($user);die;
+		$data["user"]=$user;
+		return view('shilpa/view1', $data);
+	}
+	
+		
+	public function view2()
+	{   $db = \Config\Database::connect();
+		$sql1 ='select * from users';
+		$user = $db->query($sql1)->getResultArray(); 
+		// echo '<pre>'; print_r($user);die;
+		$data["user"]=$user;
+		return view('shilpa/view2', $data);
+	}
+	
+		
+	public function view3()
+	{   $db = \Config\Database::connect();
+		$sql1 ='select * from users';
+		$user = $db->query($sql1)->getResultArray(); 
+		// echo '<pre>'; print_r($user);die;
+		$data["user"]=$user;
+		return view('shilpa/view3', $data);
+	}
+		
+	public function view4()
+	{   $db = \Config\Database::connect();
+		$sql1 ='select * from users';
+		$user = $db->query($sql1)->getResultArray(); 
+		// echo '<pre>'; print_r($user);die;
+		$data["user"]=$user;
+		return view('shilpa/view4', $data);
+	}
+	
+	public function view5()
+	{   $db = \Config\Database::connect();
+		$sql1 ='select * from users';
+		$user = $db->query($sql1)->getResultArray(); 
+		// echo '<pre>'; print_r($user);die;
+		$data["user"]=$user;
+		return view('shilpa/view5', $data);
+	}	
+}
