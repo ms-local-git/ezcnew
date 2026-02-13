@@ -475,6 +475,19 @@ if (
                     </li>
                 <?php endif; ?>
 
+                <!-- Quick Test Menu (no permissions) -->
+                <li class="nav-item">
+                    <a class="d-flex align-items-center" data-toggle="collapse" data-target="#price_tables_test">
+                        <i data-feather="grid"></i>
+                        <span class="menu-title text-truncate">Price Tables </span>
+                    </a>
+                    <ul class="menu-content" id="price_tables_test">
+                        <li><a href="<?= base_url() ?>/cptdir"><i data-feather="circle"></i><span>CPT</span></a></li>
+                        <li><a href="<?= base_url() ?>/dptdir"><i data-feather="circle"></i><span>DPT</span></a></li>
+                        <li><a href="<?= base_url() ?>/bptdir"><i data-feather="circle"></i><span>BPT</span></a></li>
+                    </ul>
+                </li>
+
                 <!-- Checks -->
                 <?php if (canCategory('checks')): ?>
                     <li class="nav-item">

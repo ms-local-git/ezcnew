@@ -65,6 +65,33 @@ $routes->get('attendance/day/(:any)', 'UserAttendance::day/$1');
 $routes->get('user-desktime', 'UserAttendance::user_desk_time');
 $routes->post('store-attendence', 'UserAttendance::store_attendence');
 
+// BPT routes
+$routes->get('bptdir', 'BptController::bptDir');
+$routes->post('addbptdir', 'BptController::AddbptData');
+$routes->get('bpt/(:num)', 'BptController::bpt/$1');
+$routes->get('bptlist/(:num)', 'BptController::Showbptlist/$1');
+$routes->match(['get', 'post'], 'insertbpt', 'BptController::Insertbpt');
+$routes->get('BptController/GetUserallData', 'BptController::GetUserallData');
+$routes->post('bptController/copybptForm', 'BptController::copybptForm');
+
+// CPT routes
+$routes->get('cptdir', 'CptController::CptDir');
+$routes->post('addcptdir', 'CptController::AddCptData');
+$routes->get('cpt/(:num)', 'CptController::Cpt/$1');
+$routes->get('cptlist/(:num)', 'CptController::Showcptlist/$1');
+$routes->match(['get', 'post'], 'insertcpt', 'CptController::InsertCpt');
+$routes->get('CptController/GetUserallData', 'CptController::GetUserallData');
+$routes->post('CptController/copyCptForm', 'CptController::copycptForm');
+
+// DPT routes
+$routes->get('dptdir', 'DptController::dptDir');
+$routes->post('adddptdir', 'DptController::AdddptData');
+$routes->get('dpt/(:num)', 'DptController::dpt/$1');
+$routes->get('dptlist/(:num)', 'DptController::Showdptlist/$1');
+$routes->match(['get', 'post'], 'insertdpt', 'DptController::Insertdpt');
+$routes->get('DptController/GetUserallData', 'DptController::GetUserallData');
+$routes->post('DptController/copydptForm', 'DptController::copydptForm');
+
 
 
 
